@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root {
+    --primary-color: #090C9B;
+    --secondary-color: #B4C5E4;
+    --accent1-color: #3D52D5;
+    --accent2-color: #3C3744;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+p {
+    font-family: Montserrat, sans-serif;
+    color: var(--text-color);
+}
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.hero img {
+    display: block;
+    
+  }
+
+h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  } 
+
+article {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    background-color: rgba(243, 237, 237, 0.314);
+}
+article img {
+    float: right;
+  }
