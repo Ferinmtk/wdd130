@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="a form quiz page">
+    <meta name="author" content="Ferrin mutuku">
+    <title>Survey Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+        <form id="formquiz">
+            <h1>The Book of Mormon Questionnaire</h1>
+            <ol>
+                <li>
+                    <label for="q1">What is the significance of the title "The Book of Mormon: Another Testament of Jesus Christ"?</label><br>
+                    <input type="text" id="q1" name="q1" required>
+
+
+                </li>
+                <li>
+                    <label for="q2">What testimony do you have about The Book of Mormon</label><br>
+                    <textarea id="q2" name="q2" rows="4" cols="50" required></textarea>
+                </li>
+                <li>
+                    <label for="q3">Who compiled the records that make up the Book of Mormon?</label><br>
+                    <select id="q3" name="q3" required>
+                        <option value="" selected disabled>Choose one</option>
+                        <option value="prophet1">Moroni</option>
+                        <option value="prophet2">Joseph Smith</option>
+                        <option value="prophet3">Nephi</option>
+                        <option value="prophet4">Mormon</option>
+                    </select><br>
+                </li>
+
+                <li>
+                    <label for="q4">How Many Prophets are there in the book of Mormon</label><br>
+                    <input type="number" id="q4" min="10" max="30" required><br><br>
+                </li>
+            </ol>
+            <button type="submit">Submit Quiz</button>
+
+            
+
+
+
+        </form>
+
+    
+</body>
+</html>
