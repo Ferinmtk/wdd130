@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conatct | Ferrin Mutuku</title>
+    <meta name="description" content="a contact us page">
+    <meta name="author" content="Ferrin Mutuku">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header class="header">
+        <img src="images/logo.png" alt="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="company-info"><br>
+            <h2> Contact Information </h2><br>
+            <p>Adress:<br> 213AdventureLane,<br>LameCity
+                CR 53421 </p><br>
+            <p>Phone:<br>(213)098-7654 </p><br>
+            <p>Email: contact@raftingsite.com</p><br><br>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1605137.1609806132!2d37.03628142760707!3d-1.2479712065162816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1716397105597!5m2!1sen!2ske" width="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+        </section><br>
+
+        <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <div class="profiles">
+                <figure>
+                    <figcaption> Kamau Kamene Guide</figcaption>
+                    <img src="images/Kamau_Kamene.png" alt="a picture of Kamau Kamene">
+                </figure>
+                <figure>
+                    <figcaption>Debra Waema operation Manager</figcaption>
+                    <img src="images/Debra_Waema.png" alt="a picture of epration manager Debra Waema">
+                </figure>
+                <figure>
+                <figcaption> James Kuria Safety Officer</figcaption>
+                <img src="images/James_Kuria.png" alt="a picture of James Kuria a Safety Officer">
+                </figure>
+            </div>
+        </section><br>
+        <section class="contact-form">
+            <h3>Let Us reach out to you</h3>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <fieldset>
+                    <legend>Purpose of message:</legend>
+                    <label> 
+                        <input type="radio" name="purpose" value="reservation">Reservation Question<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="Purpose" value="suggestion">Website Suggestion
+                    </label>
+                </fieldset>
+                <label for="message">Message:</label><br>
+                <textarea name="message" id="message" required></textarea><br>
+                <label>
+                    <input type="checkbox" name="newsletter">Please subscribe me to the monthly newsletter
+                </label><br>
+
+                <button type="submit" class="submit_button">Send Message</button>
+
+            </form>
+
+        </section>
+
+
+      
+        
+    </main>
+    <footer>
+        <p>©️2024 👀Rafting Site Company👀 Ferrin Mutuku👀</p>
+        <nav class="sociallinks">
+            <a href="https://Facebook.com">
+                <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_facebook-64.png" alt="Facebook">
+            </a>
+            <a href="https://instagram.com">
+                <img src="https://cdn0.iconfinder.com/data/icons/brands-flat-2/192/instagram-social-network-brand-logo-64.png" alt="instagram">
+            </a>
+            <a href="https://twitter.com">
+                <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-64.png" alt="twiiter">
+            </a>
+        </nav>
+    </footer>
+    
+</body>
+</html>
