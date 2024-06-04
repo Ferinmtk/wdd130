@@ -133,7 +133,7 @@ nav.sociallinks {
 }
 
 .submit_button {
-    background-color: grey;
+    background-color: rgb(11, 26, 33);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -145,7 +145,7 @@ nav.sociallinks {
 }
 
 .submit_button:hover {
-    background-color: green;
+    background-color: blue;
 }
 
 .company-info {
@@ -161,7 +161,11 @@ nav.sociallinks {
     border: none;
     align-self: start;
 }
-
+.employee-profiles{
+    border-radius: 20px;
+    display: flex;
+    border-radius: 20px;
+}
 h1 {
     text-align: center;
     position: relative;
