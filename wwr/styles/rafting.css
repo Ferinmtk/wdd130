@@ -13,9 +13,15 @@ body {
     color: var(--font-color);
     max-width: 1200px;
     margin: 0 auto;
+    
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Montserrat', sans-serif;
     color: var(--primary-color);
 }
@@ -39,6 +45,7 @@ nav a {
 .hero img {
     display: block;
     width: 100%;
+    height: 250px;
 }
 
 h1 {
@@ -61,12 +68,6 @@ article img {
     object-fit: contain;
 }
 
-.header {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    gap: 20px;
-}
 
 nav.sociallinks a img {
     text-decoration: none;
@@ -91,10 +92,6 @@ header img {
 
 }
 
-section {
-    display: flex;
-    background-color: var(--secondary-color);
-}
 
 section h2 {
     text-align: center;
@@ -114,25 +111,27 @@ footer {
     padding: 20px;
 }
 
-nav.sociallinks{
+nav.sociallinks {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
 
 }
 
-.contact-form{
+.contact-form {
     justify-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: white;
 }
+
 .contact-form input[type="text"],
 .contact-form input[type="email"],
-.contact-form textarea
-{
+.contact-form textarea {
     border: 1px solid #6aacea;
-    border-radius: 30px;
+    border-radius: 10px;
+    
 }
+
 .submit_button {
     background-color: grey;
     color: white;
@@ -145,7 +144,7 @@ nav.sociallinks{
     font-size: 20px;
 }
 
-.submit_button:hover{
+.submit_button:hover {
     background-color: green;
 }
 
@@ -162,9 +161,198 @@ nav.sociallinks{
     border: none;
     align-self: start;
 }
-h1{
+
+h1 {
     text-align: center;
     position: relative;
     margin: 20px;
 
 }
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    position: absolute;
+}
+
+.bar{
+    position: absolute;
+    top: 0;
+    left: 800px;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+}
+
+.bar ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+.bar ul li a{
+    line-height: 80px;
+    color: #1810f2;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.bar a:hover{
+    color: crimson;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+.headd{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    color: #2f033c;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    animation: glitch 2s infinite;
+
+
+}
+
+
+@keyframes glitch {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-2px);
+      }
+      50% {
+        transform: translateX(2px);
+      }
+      75% {
+        transform: translateX(-2px);
+      }
+      100% {
+        transform: translateX(2px);
+      }
+}
+.newsletter-form{
+    font-size: 30px;
+    text-align: center;
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+.newsletter-form input[type="text"],
+input[type="email"]{
+    width: 250px;
+    height: 35px;
+    border: 2px solid;
+    color: gray;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+.action{
+    position: absolute;
+    font-size: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    top: 70%;
+    left: 75%;
+    text-decoration: none;
+    
+
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.5);
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+h3 {
+    margin-top: 10px;
+}
+.grid-item:hover{
+    transform: scale(1.05);
+}
+.cta-link {
+    margin-top: 100px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4E9CAF;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: larger;
+  }
+  
+.cta-link:hover{
+    background-color: #2f033c;
+}
+
+.trip-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.trip-table th, .trip-table td{
+    border: 1px solid gray;
+    padding: 8px;
+    text-align: left;
+}
+.trip-table th {
+    background-color: #f2f2f2;
+}
+.trips-data{
+    display: grid;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.forest{
+
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    background-color: #edeef6;
+    padding: 100px;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.coastal{
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    background-color: #edeef6;
+    padding: 100px;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.mountain{
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    background-color: #edeef6;
+    padding: 100px;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
